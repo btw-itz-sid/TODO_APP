@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Line Log • Quest Dashboard</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="crew-deck">
+                <div class="crew-member" title="Luffy" style="--crew-color: #bb0026;">👒</div>
+                <div class="crew-member" title="Zoro" style="--crew-color: #2c694e;">⚔️</div>
+                <div class="crew-member" title="Nami" style="--crew-color: #f39c12;">🍊</div>
+                <div class="crew-member" title="Usopp" style="--crew-color: #f1c40f;">🏹</div>
+                <div class="crew-member" title="Sanji" style="--crew-color: #3498db;">🍳</div>
+                <div class="crew-member" title="Chopper" style="--crew-color: #e91e63;">🦌</div>
+                <div class="crew-member" title="Robin" style="--crew-color: #9b59b6;">🌸</div>
+                <div class="crew-member" title="Franky" style="--crew-color: #1abc9c;">🛠️</div>
+                <div class="crew-member" title="Brook" style="--crew-color: #ecf0f1;">💀</div>
+                <div class="crew-member" title="Jinbe" style="--crew-color: #2980b9;">🌊</div>
+            </div>
+            <div class="logo-container">
+                <h1>The Grand Line Log</h1>
+                <p class="subtitle">CAPTAIN'S LOGBOOK • PIRATE KING EDITION</p>
+            </div>
+        </header>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <div class="input-wrapper">
+                <input type="text" id="todoInput" placeholder="Scribe a new quest, Captain..." autocomplete="off">
+                <button id="addBtn">STAMP</button>
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">ALL QUESTS</button>
+            <button class="filter-btn" data-filter="pending">ACTIVE</button>
+            <button class="filter-btn" data-filter="done">CLAIMED</button>
+        </div>
+
+        <!-- Todo List - Grid Layout -->
+        <ul id="todoList"></ul>
+
+        <!-- Stats Section -->
+        <footer class="stats">
+            <div class="stat-item">
+                <span id="totalCount">0</span>
+                <div class="stat-text">TOTAL BOUNTIES</div>
+            </div>
+            <div class="stat-item">
+                <span id="doneCount">0</span>
+                <div class="stat-text">CLAIMED REWARDS</div>
+            </div>
+            <div class="stat-item">
+                <span id="pendingCount">0</span>
+                <div class="stat-text">ACTIVE QUESTS</div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
